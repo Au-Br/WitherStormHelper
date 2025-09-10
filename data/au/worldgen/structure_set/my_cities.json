@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 10387313,
+    "separation": 6,
+    "spacing": 7,
+    "spread_type": "triangular",
+    "exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "minecraft:end_cities"
+    }
+  },
+  "structures": [
+    {
+      "structure": "au:my_city",
+      "weight": 1
+    }
+  ]
+}

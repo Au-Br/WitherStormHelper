@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shulker_shell",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "binomial",
+                "n": 2,
+                "p": 0.6
+              }
+            },
+            {
+              "function": "looting_enchant",
+              "count": {
+                "type": "binomial",
+                "n": 1,
+                "p": 0.2
+              }
+            },
+            {
+              "function": "limit_count",
+              "limit": {
+                "max": 2,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "uniform",
+                "max": 4,
+                "min": 0
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "killer",
+              "predicate": {
+                "type": "player"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/shulker"
+}

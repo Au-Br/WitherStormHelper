@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 15.0,
+                      "min": 12.0
+                    },
+                    "function": "minecraft:set_count"
+                  },
+                  {
+                    "enchantment": "minecraft:fortune",
+                    "formula": "minecraft:uniform_bonus_count",
+                    "function": "minecraft:apply_bonus",
+                    "parameters": {
+                      "bonusMultiplier": 1
+                    }
+                  },
+                  {
+                    "function": "minecraft:explosion_decay"
+                  }
+                ],
+                "name": "minecraft:redstone"
+            }
+        ],
+        "rolls": 1.0
+      },
+      {
+        "rolls": 1.0,
+        "entries": [
+            {
+                "type": "item",
+                "name": "experience_bottle",
+                "functions": [
+                  {
+                    "function": "set_count",
+                    "count": {
+                      "type": "binomial",
+                      "n": 4,
+                      "p": 0.75
+                    }
+                  }
+                ]
+            }
+        ]
+      }
+    ],
+    "random_sequence": "minecraft:blocks/redstone_ore"
+  }

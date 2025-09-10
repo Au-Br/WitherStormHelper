@@ -1,0 +1,2 @@
+scoreboard players set @s come 200
+tellraw @a [{"text":"通往","color":"gold"},{"selector":"@s","color":"white"},{"text":"的传送通道已开启,十秒后关闭,输入","color":"gold"},{"text":"/trigger go","underlined":true,"color":"aqua","clickEvent":{"action":"suggest_command","value": "/trigger go"},"hoverEvent": {"action": "show_text","contents":"单击以执行命令"}},{"text":"以传送"}]

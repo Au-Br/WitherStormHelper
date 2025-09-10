@@ -1,0 +1,36 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        " # ",
+        "#A#",
+        " # "
+    ],
+    "key": {
+        "#":[
+            {
+                "item": "iron_ingot"
+            },
+            {
+                "item": "gold_ingot"
+            },
+            {
+                "item": "lapis_lazuli"
+            },
+            {
+                "item": "emerald"
+            },
+            {
+                "item": "redstone"
+            }
+        ],
+        "A":[
+            {
+                "item": "witherstormmod:amulet"
+            }
+        ]
+    },
+    "result": {
+        "item": "witherstormmod:amulet",
+        "count": 2
+    }
+}

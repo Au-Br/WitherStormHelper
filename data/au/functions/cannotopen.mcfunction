@@ -1,0 +1,1 @@
+tellraw @s [{"text":"通道正在被","color":"red"},{"selector":"@a[scores={come=1..}]","color":"white"},{"text":"占用,等到其关闭之后你才能开启","color":"red"}]

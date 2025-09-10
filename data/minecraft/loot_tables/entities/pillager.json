@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:experience_bottle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "type": "uniform",
+                "max": 4,
+                "min": 0
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "entity_properties",
+              "entity": "killer",
+              "predicate": {
+                "type": "player"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

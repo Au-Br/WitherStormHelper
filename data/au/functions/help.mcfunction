@@ -1,0 +1,5 @@
+scoreboard players set @s help 0
+tellraw @s [{"text":"输入","color":"gold"},{"text":"/trigger team","underlined":true,"color":"aqua","clickEvent":{"action":"suggest_command","value": "/trigger team"},"hoverEvent": {"action": "show_text","contents":"单击以执行命令"}},{"text":"加入队伍","color":"gold"}]
+tellraw @s [{"text":"输入","color":"gold"},{"text":"/trigger tp","underlined":true,"color":"aqua","clickEvent":{"action":"suggest_command","value": "/trigger tp"},"hoverEvent": {"action": "show_text","contents":"单击以执行命令"}},{"text":"开启传送通道","color":"gold"}]
+tellraw @s [{"text":"输入","color":"gold"},{"text":"/trigger go","underlined":true,"color":"aqua","clickEvent":{"action":"suggest_command","value": "/trigger go"},"hoverEvent": {"action": "show_text","contents":"单击以执行命令"}},{"text":"传送到打开通道的人","color":"gold"}]
+tellraw @s [{"text":"输入","color":"gold"},{"text":"/trigger roll","underlined":true,"color":"aqua","clickEvent":{"action":"suggest_command","value": "/trigger roll"},"hoverEvent": {"action": "show_text","contents":"单击以执行命令"}},{"text":"掷骰子","color":"gold"}]

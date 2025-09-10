@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "#A#",
+        "# #",
+        "# #"
+    ],
+    "key": {
+        "#":[
+            {
+                "item": "minecraft:leather"
+            },
+            {
+                "item": "minecraft:phantom_membrane"
+            }
+        ],
+        "A":{
+            "item": "minecraft:elytra"
+        }
+    },
+    "result": {
+        "item": "elytra",
+        "count": 2
+    }
+}

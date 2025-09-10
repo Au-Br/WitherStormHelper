@@ -1,0 +1,6 @@
+tp @s @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"witherstormmod:withered_nether_star"}}]
+
+execute if entity @a[nbt={Inventory:[{Slot:0b,tag:{Enchantments:[{"id":"minecraft:vanishing_curse"}]}}]}] run say 111
+
+setblock -551 90 55 minecraft:chest[facing=north,type=single,waterlogged=false]{Items:[{Count:1b,Slot:0b,id:"minecraft:written_book",tag:{author:"_AuBr_",filtered_title:"模组介绍",pages:['{"text":"模组介绍：\\n苹果皮：显示饥饿值和饱和度，以及每种食物回复的饥饿值和饱和度。\\n搭桥辅助：让搭路更简单(按\\"，\\"可以开关该功能)。\\n附魔介绍：给每种附魔添加了简单解释。\\n高亮度：使视野明亮(按g可以开关该功能)。\\n物品提示：新获得的物品会在背包中显示黄色星号\\n玉：在屏幕上方介绍准星对准的生物或方块"}','{"text":"REI物品管理：背包界面中鼠标放在一个物品上按R查看获得途径，按U查看用途，按esc或e返回。\\n潜影盒预览：按shift查看潜影盒内容。\\n世界预览：按esc后可以预览世界中的结构和群系。\\n小地图和世界地图：防止迷路。"}'],title:"模组介绍"}}]}
+give @s minecraft:written_book{author:"_AuBr_",filtered_title:"模组介绍",pages:['{"text":"模组介绍：\\n苹果皮：显示饥饿值和饱和度，以及每种食物回复的饥饿值和饱和度。\\n搭桥辅助：让搭路更简单(按\\"，\\"可以开关该功能)。\\n附魔介绍：给每种附魔添加了简单解释。\\n高亮度：使视野明亮(按g可以开关该功能)。\\n物品提示：新获得的物品会在背包中显示黄色星号\\n玉：在屏幕上方介绍准星对准的生物或方块"}','{"text":"REI物品管理：背包界面中鼠标放在一个物品上按R查看获得途径，按U查看用途，按esc或e返回。\\n潜影盒预览：按shift查看潜影盒内容。\\n世界预览：按esc后可以预览世界中的结构和群系。\\n小地图和世界地图：防止迷路。"}'],title:"模组介绍"}
